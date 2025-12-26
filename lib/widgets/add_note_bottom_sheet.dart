@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:test/Constance.dart';
-import 'package:test/Views/widgets/Custom_Text_filed.dart';
-import 'package:test/Views/widgets/custome_button.dart';
+import 'package:test/widgets/Constance.dart';
+import 'package:test/widgets/Custom_Text_filed.dart';
+import 'package:test/widgets/custome_button.dart';
 
 class AddNoteButtomSheet extends StatelessWidget {
   const AddNoteButtomSheet({super.key});

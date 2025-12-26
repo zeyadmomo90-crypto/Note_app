@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test/Constance.dart';
+import 'package:test/widgets/Constance.dart';
 
 class CustomTextFiled extends StatelessWidget {
   const CustomTextFiled({super.key, required this.HintText, this.maxlines = 1});

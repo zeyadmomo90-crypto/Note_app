@@ -23,12 +23,12 @@ class CustomTextFiled extends StatelessWidget {
       },
       onSaved: onSaved,
       maxLines: maxlines,
-      cursorColor: kprimarycolor,
+      cursorColor: kPrimaryColor,
       decoration: InputDecoration(
         hintText: hintText,
         border: buildborder(),
         enabledBorder: buildborder(),
-        focusedBorder: buildborder(Color: kprimarycolor),
+        focusedBorder: buildborder(Color: kPrimaryColor),
       ),
     );
   }

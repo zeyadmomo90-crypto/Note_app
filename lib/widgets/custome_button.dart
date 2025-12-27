@@ -2,24 +2,27 @@ import 'package:flutter/material.dart';
 import 'package:test/widgets/Constance.dart';
 
 class Custombutton extends StatelessWidget {
-  const Custombutton({super.key});
-
+  const Custombutton({super.key, this.onTap});
+  final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Kprimarycolor,
-        borderRadius: BorderRadius.circular(8),
-      ),
-      width: MediaQuery.of(context).size.width,
-      height: 55,
-      child: Center(
-        child: Text(
-          'Add',
-          style: TextStyle(
-            color: Colors.black,
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        decoration: BoxDecoration(
+          color: kprimarycolor,
+          borderRadius: BorderRadius.circular(8),
+        ),
+        width: MediaQuery.of(context).size.width,
+        height: 55,
+        child: Center(
+          child: Text(
+            'Add',
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
       ),

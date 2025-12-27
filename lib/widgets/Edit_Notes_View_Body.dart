@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:test/widgets/Custom_App_Bar.dart';
-import 'package:test/widgets/Custom_Text_filed.dart';
+import 'package:test/widgets/custom_app_bar.dart';
+import 'package:test/widgets/custom_text_filed.dart';
 
 class EditNotesViewBody extends StatelessWidget {
   const EditNotesViewBody({super.key});
@@ -12,11 +12,11 @@ class EditNotesViewBody extends StatelessWidget {
       child: Column(
         children: const [
           SizedBox(height: 50),
-          CustomAppBar(Title: 'Add Note', Icon: Icons.check),
+          CustomAppBar(title: 'Add Note', icon: Icons.check),
           SizedBox(height: 50),
-          CustomTextFiled(HintText: 'Title'),
+          CustomTextFiled(hintText: 'Title'),
           SizedBox(height: 16),
-          CustomTextFiled(HintText: 'content', maxlines: 5),
+          CustomTextFiled(hintText: 'content', maxlines: 5),
         ],
       ),
     );
